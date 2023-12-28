@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "Transaksi API",
+        "version": "1.0"
+    },
+    "servers": [{ "url": "https://localhost:8000" }],
+    "paths": {
+        "/api/transaksi": {
+            "get": {
+                "description": "Get all data transaksi",
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header"
+                    }
+                ]
+            }
+        },
+        "/api/users/{id}/transaksi": {
+            "get": {
+                "description": "Get all data transaksi user"
+            }
+        },
+        "/api/guns/{id}/transaksi": {
+            "get": {
+                "description": "Get all data transaksi gun"
+            }
+        }
+    }
+}
